@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - STOCK@localhost" uuid="20282373-2748-4b43-a425-6a37ce8d28cc">
+    <database-info product="MySQL" version="5.7.17-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.44 ( Revision: b3cda4f864902ffdde495b9df93937c3e20009be )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="stock"/>
+      <table id="2" parent="1" name="hibernate_sequence"/>
+      <table id="3" parent="1" name="user"/>
+      <table id="4" parent="1" name="stockbasic"/>
+      <column id="5" parent="2" name="next_val">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="6" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="7" parent="3" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="8" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="9" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="10" parent="4" name="capital">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="11" parent="4" name="code">
+        <data-type>varchar(8)</data-type>
+      </column>
+      <column id="12" parent="4" name="last_year_kf_profit">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="13" parent="4" name="last_year_profit">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="14" parent="4" name="market">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="15" parent="4" name="p_net_estate">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="16" parent="4" name="price">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="17" parent="4" name="ttm_kf_profit">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="18" parent="4" name="ttm_profit">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <key id="19" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
