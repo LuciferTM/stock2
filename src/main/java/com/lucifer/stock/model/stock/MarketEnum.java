@@ -1,4 +1,4 @@
-package com.lucifer.stock.model;
+package com.lucifer.stock.model.stock;
 
 /**
  * <p>Title:</p>

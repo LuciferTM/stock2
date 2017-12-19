@@ -1,6 +1,8 @@
 package com.lucifer.stock.model.stock;
 
 import com.lucifer.stock.constants.SchemaConstant;
+import com.lucifer.stock.model.generic.StockGenericEntity;
+
 
 import javax.persistence.*;
 
@@ -15,11 +17,11 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "STOCKBASIC", schema= SchemaConstant.STOCK_SCHEMA)
-public class StockBasic {
+public class StockBasic extends StockGenericEntity<Integer, StockBasic> {
     @Id
     @Column(name = "id", unique=true, nullable=false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     @Column(name = "market")
     @Enumerated(value = EnumType.STRING)
@@ -53,11 +55,13 @@ public class StockBasic {
     }
 
 
-    public Long getId() {
+    @Override
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    @Override
+    public void setId(Integer id) {
         this.id = id;
     }
 

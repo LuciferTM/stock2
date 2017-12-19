@@ -1,4 +1,6 @@
-package com.lucifer.stock;
+package com.lucifer.stock.model.user;
+
+import com.lucifer.stock.model.generic.StockGenericEntity;
 
 import javax.persistence.*;
 
@@ -12,7 +14,7 @@ import javax.persistence.*;
  */
 @Table
 @Entity
-public class User {
+public class User extends StockGenericEntity<Integer, User> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
