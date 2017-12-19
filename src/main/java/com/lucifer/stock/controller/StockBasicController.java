@@ -1,7 +1,7 @@
 package com.lucifer.stock.controller;
 
-import com.lucifer.stock.model.MarketEnum;
-import com.lucifer.stock.model.StockBasic;
+import com.lucifer.stock.model.stock.MarketEnum;
+import com.lucifer.stock.model.stock.StockBasic;
 import com.lucifer.stock.service.StockBasicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

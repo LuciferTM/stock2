@@ -1,6 +1,6 @@
 package com.lucifer.stock.repositories;
 
-import com.lucifer.stock.model.StockBasic;
+import com.lucifer.stock.model.stock.StockBasic;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.io.Serializable;
