@@ -1,5 +1,6 @@
-package com.lucifer.stock;
+package com.lucifer.stock.dao;
 
+import com.lucifer.stock.model.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.io.Serializable;

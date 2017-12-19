@@ -1,6 +1,6 @@
 package com.lucifer.stock.service;
 
-import com.lucifer.stock.model.StockBasic;
+import com.lucifer.stock.model.stock.StockBasic;
 
 import java.util.List;
 

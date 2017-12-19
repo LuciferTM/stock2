@@ -1,4 +1,4 @@
-package com.lucifer.stock.model;
+package com.lucifer.stock.model.stock;
 
 import com.lucifer.stock.constants.SchemaConstant;
 

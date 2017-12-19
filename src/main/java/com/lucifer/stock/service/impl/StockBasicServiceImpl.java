@@ -1,6 +1,6 @@
 package com.lucifer.stock.service.impl;
 
-import com.lucifer.stock.model.StockBasic;
+import com.lucifer.stock.model.stock.StockBasic;
 import com.lucifer.stock.repositories.StockBasicRepository;
 import com.lucifer.stock.service.StockBasicService;
 import org.springframework.beans.factory.annotation.Autowired;

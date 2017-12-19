@@ -1,7 +1,7 @@
 package com.lucifer.stock.service.impl;
 
-import com.lucifer.stock.User;
-import com.lucifer.stock.UserDao;
+import com.lucifer.stock.model.user.User;
+import com.lucifer.stock.dao.UserDao;
 import com.lucifer.stock.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

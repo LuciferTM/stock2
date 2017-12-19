@@ -1,6 +1,6 @@
 package com.lucifer.stock.service;
 
-import com.lucifer.stock.User;
+import com.lucifer.stock.model.user.User;
 
 import java.util.List;
 
