@@ -19,16 +19,31 @@
     <sec:http pattern="/getCode" security="none" /><!-- 不过滤验证码 -->
     <sec:http pattern="/test/**" security="none"></sec:http><!-- 不过滤测试内容 -->
 
+    <!--<sec:http auto-config="true">-->
+
+        <!--<sec:intercept-url pattern="/app.jsp" access="ROLE_SERVICE"/>-->
+        <!--<sec:intercept-url pattern="/**" access="ROLE_ADMIN"/>-->
+
+    <!--</sec:http>-->
+
+    <sec:http security="none" pattern="/login.jsp" />
     <sec:http auto-config="true">
+        <sec:form-login login-page="/login.jsp"
+                             login-processing-url="/login.do" username-parameter="username"
+                             password-parameter="password"
+                             default-target-url="/index.jsp"
 
-        <sec:intercept-url pattern="/app.jsp" access="ROLE_SERVICE"/>
-        <sec:intercept-url pattern="/**" access="ROLE_ADMIN"/>
-
+        />
+        <!-- 表示匿名用户可以访问 -->
+        <!--<security:intercept-url pattern="/login.jsp" access="IS_AUTHENTICATED_ANONYMOUSLY"/>-->
+        <sec:intercept-url pattern="/**" access="ROLE_USER" />
     </sec:http>
+
 
     <sec:authentication-manager>
         <sec:authentication-provider>
             <sec:user-service >
+                <sec:user name="user" password="user" authorities="ROLE_USER"/>
                 <sec:user name="admin" password="admin" authorities="ROLE_ADMIN"/>
             </sec:user-service>
         </sec:authentication-provider>
