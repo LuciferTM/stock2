@@ -1,16 +1,13 @@
 package com.lucifer.stock.test.stockbasic;
 
-import com.lucifer.stock.model.MarketEnum;
-import com.lucifer.stock.model.StockBasic;
+import com.lucifer.stock.model.stock.MarketEnum;
+import com.lucifer.stock.model.stock.StockBasic;
 import com.lucifer.stock.service.StockBasicService;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.support.DependencyInjectionTestExecutionListener;
 
 /**
  * <p>Title:</p>
